@@ -1,0 +1,22 @@
+*{
+    color: rgb(0, 0, 0);
+}
+.nav {
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 20px;
+    color: white;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 10px 10px 0 60px;
+    color: white;
+}
+.menu ul{
+    list-style: none;
+}
