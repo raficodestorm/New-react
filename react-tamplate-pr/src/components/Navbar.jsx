@@ -1,5 +1,4 @@
 
-import default from './../../../react-router/node_modules/@vitejs/plugin-react/dist/refresh-runtime';
 function Nav() {
     return (
         <>
