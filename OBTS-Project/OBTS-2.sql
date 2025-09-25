@@ -66,6 +66,18 @@ CREATE TABLE routes (
 );
 
 -- ===================================================
+-- BUS STOPS (optional improvement)
+-- ===================================================
+CREATE TABLE bus_stops (
+    id BIGSERIAL PRIMARY KEY,
+    route_id BIGINT NOT NULL REFERENCES routes(id) ON DELETE CASCADE,
+    stop_name VARCHAR(255) NOT NULL,
+    sequence INT NOT NULL,
+    arrival_time TIMESTAMP,
+    departure_time TIMESTAMP
+);
+
+-- ===================================================
 -- BUSES
 -- ===================================================
 CREATE TABLE buses (
@@ -73,7 +85,7 @@ CREATE TABLE buses (
     operator_id BIGINT NOT NULL REFERENCES operators(id) ON DELETE CASCADE ON UPDATE CASCADE,
     registration_number VARCHAR(50) UNIQUE NOT NULL,
     model VARCHAR(100),
-    seat_layout JSONB NOT NULL, -- can be normalized into bus_seats if needed
+    seat_layout JSONB NOT NULL,
     total_seats INT NOT NULL,
     amenities JSONB,
     created_at TIMESTAMP DEFAULT now(),
@@ -201,6 +213,7 @@ CREATE TABLE notifications (
     created_at TIMESTAMP DEFAULT now()
 );
 
+
 -- ===================================================
 -- INDEXES
 -- ===================================================
@@ -216,3 +229,4 @@ CREATE INDEX idx_loyalty_user ON loyalty_points(user_id);
 CREATE INDEX idx_feedback_trip ON feedbacks(trip_id);
 CREATE INDEX idx_drivers_phone ON drivers(phone);
 CREATE INDEX idx_operators_license ON operators(license_number);
+

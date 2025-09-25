@@ -8,9 +8,71 @@ function Master() {
         <>
             <Nav></Nav>
             <Sidebar></Sidebar>
-            <div>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit perspiciatis dolorum magni perferendis, quibusdam laudantium! Facere, provident consequuntur quaerat ipsum praesentium ipsam ab sed. Nam, ipsam esse assumenda minus explicabo totam aspernatur quod nihil iusto quidem magnam nemo consequuntur natus. Dignissimos enim at aliquam quasi, expedita officia cum accusamus non rem atque reprehenderit distinctio ad eaque, magnam voluptate velit explicabo eius repellendus, vel quibusdam voluptatem fugiat cupiditate impedit possimus? Saepe eum eligendi ducimus incidunt nesciunt, eos dolorem quisquam. Eos doloremque delectus maiores modi facere est repudiandae iure id nobis deleniti aliquid, fugit esse expedita porro quas, ad ullam praesentium magnam laborum neque harum incidunt hic explicabo. Porro natus voluptatibus itaque cumque asperiores? Placeat iure officia fugiat perspiciatis deleniti magni delectus dolore dolor. Impedit omnis, possimus quisquam rerum, sit facilis perspiciatis modi tenetur libero cupiditate repellat minus delectus exercitationem id consequatur. Ratione voluptates modi a distinctio. Dolorem nulla alias maxime eos pariatur iusto atque omnis, delectus voluptatem quod. Modi officia consectetur perspiciatis nostrum eos inventore quo adipisci sequi, vel magni beatae voluptas culpa amet sed blanditiis? Consequuntur accusantium esse sed odit laboriosam quis impedit, similique aliquid perferendis cum doloremque distinctio voluptatem debitis, assumenda labore quasi quibusdam? Illum nam libero nihil reiciendis?
-            </div>
+            <section className="content">
+  <div className="float-right container-fluid wrapper">
+    {/* Small boxes (Stat box) */}
+    <div className="row">
+      <div className="col-lg-3 col-6">
+        {/* small box */}
+        <div className="small-box bg-info">
+          <div className="inner">
+            <h3>150</h3>
+            <p>New Orders</p>
+          </div>
+          <div className="icon">
+            <i className="ion ion-bag" />
+          </div>
+          <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
+        </div>
+      </div>
+      {/* ./col */}
+      <div className="col-lg-3 col-6">
+        {/* small box */}
+        <div className="small-box bg-success">
+          <div className="inner">
+            <h3>53<sup style={{fontSize: 20}}>%</sup></h3>
+            <p>Bounce Rate</p>
+          </div>
+          <div className="icon">
+            <i className="ion ion-stats-bars" />
+          </div>
+          <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
+        </div>
+      </div>
+      {/* ./col */}
+      <div className="col-lg-3 col-6">
+        {/* small box */}
+        <div className="small-box bg-warning">
+          <div className="inner">
+            <h3>44</h3>
+            <p>User Registrations</p>
+          </div>
+          <div className="icon">
+            <i className="ion ion-person-add" />
+          </div>
+          <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
+        </div>
+      </div>
+      {/* ./col */}
+      <div className="col-lg-3 col-6">
+        {/* small box */}
+        <div className="small-box bg-danger">
+          <div className="inner">
+            <h3>65</h3>
+            <p>Unique Visitors</p>
+          </div>
+          <div className="icon">
+            <i className="ion ion-pie-graph" />
+          </div>
+          <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
+        </div>
+      </div>
+      {/* ./col */}
+    </div>
+    </div>
+    </section>
+    {/* /.row */}
+   
             <Footer></Footer>
         </>
     )
