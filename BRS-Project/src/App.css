@@ -22,9 +22,8 @@ body{
     color: #220901;
     background-color: var(--back-color);
     line-height: 1.5rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
     min-height: 100vh;
+    
 }
 main{
     padding: 0;
@@ -109,7 +108,7 @@ main{
 }
 
 /* ----------- js class start ----------- */
-.close{
+.sidebar.close{
     width: 60px;
     padding: 5px;
 }
@@ -135,17 +134,11 @@ main{
 }
 
 @media (max-width: 800px) {
-    body {
-        grid-template-columns: 1fr;
-    }
 
     main {
         padding: 2rem 1rem 60px 1rem; /* fixed selector */
     }
 
-    .container {
-        padding: 0;
-    }
 
     .sidebar {
         height: 60px;
@@ -307,4 +300,8 @@ main{
   border-radius: 50%;
   font-weight: bold;
 }
+
+
+
+
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './BusEntry.css'; // Don't forget to create this CSS file
+import './Admins.css';  // Don't forget to create this CSS file
 
 const BusEntry = () => {
     // State to hold form data
